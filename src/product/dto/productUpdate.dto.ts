@@ -8,4 +8,16 @@ export class ProductUpdateDto {
   @IsNumber()
   @IsOptional()
   price: number;
+
+  @IsNumber()
+  @IsOptional()
+  amount: number;
+
+  @IsNotEmpty()
+  @IsOptional()
+  description: string;
+
+  @IsNotEmpty()
+  @IsOptional()
+  category: string;
 }
